@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="header-wrap">
+      <!-- -----------Navigation----------- -->
+      <nav class="navbar navbar-expand-lg navbar-light navigation-wrap">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img style="width: 125px;"  src="./images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup " aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="file:///D:/Workspace/Project/Bohostore/index.html">Home</a>
+                    <a class="nav-link" href="file:///D:/Workspace/Project/Bohostore/products_all.html">Products</a>
+                    <a class="nav-link" href="file:///D:/Workspace/Project/Bohostore/cart.html">Cart</a>
+                    <a class="nav-link" href="file:///D:/Workspace/Project/Bohostore/account.html">Acount</a>
+                    <a class="cart nav-link" href=""><i class = 'bx bx-cart'> </i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+      <!-- -----------main header----------- -->
+      <div class="main-header container-fluid">
+          <div class="row d-flex align-items-center main-header-info">
+              <div class="col-sm-6 ">
+                  <h1 class="fw-bold ">Give Your Workout A New Style</h1>
+                  <p>Success isn't alway about greatness. It's about
+                  consistency.</p>
+                  <a href="" class="main-btn">Explore Now &#8594;<!-- Bảng kí tự đặc biệt trong HTML --></a>
+              </div>
+              <div class="col-sm-6 main-header-img">
+                  <img src="images/image1.png" alt="">
+              </div>
+          </div>
+      </div>
+
+    </div>
+
+
+    <!-- -----------featured categories------------- --> 
+    <div class="categories container padding">
+      <div class="row text-center">
+        <div class="col-sm-6 col-md-4"><img src="images/category-1.jpg" ></div>
+        <div class="col-sm-6 col-md-4"><img src="images/category-2.jpg" ></div>
+        <div class="col-sm-6 col-md-4"><img src="images/category-3.jpg" ></div>
+      </div>
+    </div>
+
+    <!-- -----------featured Products----------- -->
+    <div class="products container padding">
+      <div class="row ">
+        <div class="col-12 text-center">
+          <h2 class="products-title">Featured Products</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-cart">
+            <a  href="file:///D:/Workspace/Project/Bohostore/product_detail.html"><img class="card-img-top" src="./images/product-1.jpg" alt=""></a>
+            <div class="card-body">
+              <a href="#" class="card-title">Red Printed T-Shirt</a>
+              <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o"></i>  
+              </div>
+              <p><span class="product-price">50000</span>&#8363;</p>
+              <button class="addCart main-btn my-1">Add To <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-cart">
+            <a  href="#"><img class="card-img-top" src="./images/product-2.jpg" alt=""></a>
+            <div class="card-body">
+              <a href="#" class="card-title">Red Printed T-Shirt</a>
+              <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o"></i>  
+              </div>
+              <p><span class="product-price">50000</span>&#8363;</p>
+              <button class="addCart main-btn my-1">Add To <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-cart">
+            <a  href="#"><img class="card-img-top" src="./images/product-3.jpg" alt=""></a>
+            <div class="card-body">
+              <a href="#" class="card-title">Red Printed T-Shirt</a>
+              <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o"></i>  
+              </div>
+             
+              <p><span class="product-price">50000</span>&#8363;</p>
+              <button class="addCart main-btn my-1">Add To <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-cart">
+            <a  href="#"><img class="card-img-top" src="./images/product-4.jpg" alt=""></a>
+            <div class="card-body">
+              <a href="#" class="card-title">Red Printed T-Shirt</a>
+              <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o"></i>  
+              </div>
+              <p><span class="product-price">50000</span>&#8363;</p>
+              <button class="addCart main-btn my-1">Add To <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- -----------Latest Products----------- -->
+    <div class="products container padding">
+      <div class="row ">
+        <div class="col-12 text-center">
+          <h2 class="products-title">Featured Products</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-cart">
+            <a  href="#"><img class="card-img-top" src="./images/product-5.jpg" alt=""></a>
+            <div class="card-body">
+              <a href="#" class="card-title">Red Printed T-Shirt</a>
+              <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o"></i>  
+              </div>
+              <p><span class="product-price">50000</span>&#8363;</p>
+              <button class="addCart main-btn my-1">Add To <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-cart">
+            <a  href="#"><img class="card-img-top" src="./images/product-6.jpg" alt=""></a>
+            <div class="card-body">
+              <a href="#" class="card-title">Red Printed T-Shirt</a>
+              <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o"></i>  
+              </div>
+              <p><span class="product-price">50000</span>&#8363;</p>
+              <button class="addCart main-btn my-1">Add To <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-cart">
+            <a  href="#"><img class="card-img-top" src="./images/product-7.jpg" alt=""></a>
+            <div class="card-body">
+              <a href="#" class="card-title">Red Printed T-Shirt</a>
+              <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o"></i>  
+              </div>
+              <p><span class="product-price">50000</span>&#8363;</p>
+              <button class="addCart main-btn my-1">Add To <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card product-cart">
+            <a  href="#"><img class="card-img-top" src="./images/product-8.jpg" alt=""></a>
+            <div class="card-body">
+              <a href="#" class="card-title">Red Printed T-Shirt</a>
+              <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o"></i>  
+              </div>
+              <p><span class="product-price">50000</span>&#8363;</p>
+              <button class="addCart main-btn my-1">Add To <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- -----------offer----------- -->
+    <div class="offer container-fluid padding ">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-sm-6 offer-img">
+            <img  src="./images/exclusive.png" alt="">
+          </div>
+          <div class="col-sm-6 offer-infor">
+            <div class="offer-text">
+              Exclusively Available on Redstore
+            </div>
+            <div class="offer-title">Smart Band 4</div>
+            <div class="offer-text">The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</div>
+            <div class="main-btn">Buy Now &#8594;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------testimonial----------- -->
+    <div class="testimonial container padding">
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+          <div class="user  text-center item">
+            <i class="fa fa-quote-left quote"></i>
+            <div class="user-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam necessitatibus sed debitis odit dolorum aperiam.</div>
+            <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star-o"></i>  
+            </div>
+            <img src="./images/user-1.png" alt="" class="user-image">
+            <div class="user-name">Sean Parker</div>
+          </div>
+          <div class="user  text-center item">
+            <i class="fa fa-quote-left quote"></i>
+            <div class="user-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam necessitatibus sed debitis odit dolorum aperiam.</div>
+            <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star-o"></i>  
+            </div>
+            <img src="./images/user-2.png" alt="" class="user-image">
+            <div class="user-name">Sean Parker</div>
+          </div>
+          <div class="user  text-center item">
+            <i class="fa fa-quote-left quote"></i>
+            <div class="user-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam necessitatibus sed debitis odit dolorum aperiam.</div>
+            <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star-o"></i>  
+            </div>
+            <img src="./images/user-3.png" alt="" class="user-image">
+            <div class="user-name">Sean Parker</div>
+          </div>
+          <div class="user  text-center item">
+            <i class="fa fa-quote-left quote"></i>
+            <div class="user-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam necessitatibus sed debitis odit dolorum aperiam.</div>
+            <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star-o"></i>  
+            </div>
+            <img src="./images/user-3.png" alt="" class="user-image">
+            <div class="user-name">Sean Parker</div>
+          </div>
+          <div class="user  text-center item">
+            <i class="fa fa-quote-left quote"></i>
+            <div class="user-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam necessitatibus sed debitis odit dolorum aperiam.</div>
+            <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star-o"></i>  
+            </div>
+            <img src="./images/user-3.png" alt="" class="user-image">
+            <div class="user-name">Sean Parker</div>
+          </div>
+          <div class="user  text-center item">
+            <i class="fa fa-quote-left quote"></i>
+            <div class="user-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam necessitatibus sed debitis odit dolorum aperiam.</div>
+            <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star-o"></i>  
+            </div>
+            <img src="./images/user-2.png" alt="" class="user-image">
+            <div class="user-name">Sean Parker</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------brands----------- -->
+    <div class="container brands padding">
+      <div class="row text-center">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <img src="./images/logo-godrej.png" alt="">
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <img src="./images/logo-oppo.png" alt="">
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <img src="./images/logo-coca-cola.png" alt="">
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <img src="./images/logo-paypal.png" alt="">
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <img src="./images/logo-philips.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- -----------footer----------- -->
+    <div class="footer container-fluid padding">
+      <div class="row ">
+        <div class="col-12 col-sm-6 col col-md-4">
+          <h6 class="fw-bold">Download Our App</h6>
+          <p>Download App for Android and ios mobile phone.</p>
+          <div class="row ">
+              <div class="col-12">
+                <img src="./images/play-store.png" alt="">
+              <img src="./images/app-store.png" alt="">
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col col-md-4 text-center">
+          <h6><img src="./images/logo-white.png" alt=""></h6>
+          <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+        </div>
+        <div class="col-12 col-sm-6 col col-md-4">
+          <div class="row">
+            <div class="col-6 text-center">
+              <h6 class="fw-bold">Usefull Links</h6>
+              <ul class="list-unstyled">
+                <li>Coupoms</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+            <div class="col-6 text-center">
+              <h6 class="fw-bold">Follow us</h6>
+              <ul class="list-unstyled">
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <p class="col-12 text-center">Copyright 2022 - NGUYEN THU TRANG</p>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
+})
+    </script>
+</body>
+</html>

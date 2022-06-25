@@ -1,0 +1,35 @@
+.products {
+    &-short {
+        margin: 16px 0 64px;
+    }
+
+    & .dropdown {
+
+    }
+    button {
+        border: 1px solid $primary-color;
+    }
+
+    button:focus {
+        box-shadow: none;
+    }
+
+    .pagination  {
+        .page-link {
+            color: black ;
+            border-color: $primary-color;
+        }
+
+        .page-item.active {
+            .page-link {
+                background-color: $primary-color ;
+                border-color: $primary-color;
+                color: white;
+            }
+        }
+
+        .page-link:focus {
+            box-shadow: none;
+        }
+    }
+}

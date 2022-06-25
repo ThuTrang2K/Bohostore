@@ -1,0 +1,37 @@
+.cart {
+    &-item {
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            object-position: left top;
+        }
+    }
+
+    &-table {
+        input {
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+        }
+    }
+
+    &-info {
+        color: $primary-text-color;
+
+        a {
+            color: $primary-color;
+        }
+    }
+}
+
+table thead {
+	background-color: $primary-color;
+
+}
+
+.table-total {
+	max-width: 400px;
+	border-top: 3px solid $primary-color;
+}
+

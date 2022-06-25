@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+body {
+    font-family: $primary-font;
+    font-size: 16px;
+}
+
+.main-btn {
+    border: none;
+    display: inline-block;
+    background: $primary-color;
+    color:#fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.main-btn:hover{
+	background: #563434;
+}
+
+.rating {
+    color: $primary-color;
+}
+
+[class*="col-"] {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: $container + 30px; 
+    margin: 0 auto;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+hr {
+    opacity: 1;
+}

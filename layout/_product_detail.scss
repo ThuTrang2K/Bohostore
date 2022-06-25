@@ -1,0 +1,56 @@
+.produc-info {
+    padding-left: 46px;
+    input {
+        width: 45px;
+        margin-right: 20px;
+    }
+
+    .btn {
+        color: black ;
+        border-color: $primary-color;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    h2 {
+        font-size: 40px;
+        margin: 46px 0;
+    }
+
+    h5 {
+        margin-top: 32px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+}
+
+.breadcrumb-item a{
+    color: $primary-color;
+
+    &.active {
+        color: $primary-text-color;
+    }
+}
+
+@include maxWidth(575px) {
+    .produc-info {
+        padding-left: 15px;
+        padding-top: 32px;
+
+        h2 {
+            font-size: 32px;
+            margin: 16px 0;
+        }
+    
+        h5 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    }
+
+    
+}

@@ -1,0 +1,260 @@
+.padding {
+    margin-top: 95px ;
+}
+
+.header-wrap {
+    @include gradient;
+}
+
+.main-header {
+    padding: 64px 32px;
+
+    h1 {
+        line-height: 60px;
+        margin-bottom: 20px ;
+    }
+
+    p {
+        color: $primary-text-color;
+    }
+    
+}
+
+.products {
+    &-title {
+        position: relative;
+        line-height: 60px;
+        color: $primary-text-color;
+        margin-bottom: 64px;
+
+        &::after {
+            content: '';
+            background: #ff523b;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .card {
+        border: none !important;
+        transition: transform 0.5s;
+
+        &-body {
+            padding-left: 0;
+        }
+
+        &-title, p {
+            color: $primary-text-color;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.offer {
+    padding: 64px 0;
+    @include gradient;
+    
+    &-img {
+        padding: 50px;
+    }
+
+    &-text {
+        color: $primary-text-color;
+    }
+
+    &-title {
+        font-size: 32px;
+        line-height: 60px;
+        font-weight: 700;
+        margin: 25px 0;
+    }
+}
+
+.testimonial {
+    i.quote{
+        color: $primary-color;
+        font-size: 34px;
+    }
+
+    .user {
+        box-shadow: 0 0 20px 0px rgb(0 0 0 / 10%);
+        cursor: pointer;
+        // width: 30%;
+        max-width: 300px;
+        // margin-bottom: 30px;
+        padding: 40px 20px;
+        margin: 10px auto;
+        transition: transform 0.5s;
+
+        &-text {
+            color: $secondary-text-color;
+            font-size: 12px;
+        }
+
+        &-name {
+            color: $primary-text-color;
+            font-weight: 600;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+
+.owl-carousel .owl-item img {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.brands {
+    img {
+        cursor: pointer;
+        filter: grayscale(100%);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}
+
+.footer {
+    background: #000;
+    color: white;
+    padding: 46px  32px 16px;
+
+    p, li {
+        color: $third-text-color;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        width: 140px;
+    }
+
+    h6 {
+        padding: 16px 0;
+    }
+
+    hr {
+        margin: 16px 0;
+    }
+}
+
+
+@include maxWidth(991px){
+    .main-header {
+        padding: 64px 24px;
+
+    }
+
+}
+
+@include maxWidth(768px) {
+    .padding {
+        margin-top: 64px ;
+    }
+
+    .categories
+        img {
+            width: 80%;
+            margin-bottom: 40px;
+        }
+
+    .products {
+        .card {
+            width: 80%;
+            margin-bottom: 32px;
+            margin: 0 auto;
+        }
+    }
+
+    .offer {
+        padding: 32px 0;
+    }
+}
+
+@include maxWidth(576px) {
+    .padding {
+        margin-top: 32px ;
+    }
+
+    .main-header {
+        padding: 24px;
+
+        &-info, &-img {
+            text-align: center;
+        }
+    }
+
+    .categories {
+        img {
+            width: 100%;
+        }
+    }
+
+    .products {
+        &-title {
+            margin-bottom: 32px;
+        }
+        .card {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .offer {
+        &-img {
+            padding: 80px;
+        }
+
+        &-infor, &-img {
+            text-align: center;
+        }
+    }
+
+    .testimonial {
+        .user {
+            width: 90%;
+        }
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

@@ -1,0 +1,432 @@
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.main-btn {
+  border: none;
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.main-btn:hover {
+  background: #563434;
+}
+
+.rating {
+  color: #ff523b;
+}
+
+[class*=col-] {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+hr {
+  opacity: 1;
+}
+
+.navbar {
+  padding: 16px 32px;
+}
+
+.navigation-wrap.scroll-on {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.09);
+  transition: all 0.15s ease-in-out 0s;
+  z-index: 100;
+}
+
+.navigation-wrap.scroll-on .nav-link {
+  color: black;
+}
+
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active {
+  color: #ff523b;
+}
+
+.padding {
+  margin-top: 95px;
+}
+
+.header-wrap {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.main-header {
+  padding: 64px 32px;
+}
+.main-header h1 {
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.main-header p {
+  color: #555;
+}
+
+.products-title {
+  position: relative;
+  line-height: 60px;
+  color: #555;
+  margin-bottom: 64px;
+}
+.products-title::after {
+  content: "";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.products .card {
+  border: none !important;
+  transition: transform 0.5s;
+}
+.products .card-body {
+  padding-left: 0;
+}
+.products .card-title, .products .card p {
+  color: #555;
+}
+.products .card:hover {
+  transform: translateY(-5px);
+}
+
+.offer {
+  padding: 64px 0;
+  background: radial-gradient(#fff, #ffd6d6);
+}
+.offer-img {
+  padding: 50px;
+}
+.offer-text {
+  color: #555;
+}
+.offer-title {
+  font-size: 32px;
+  line-height: 60px;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+.testimonial i.quote {
+  color: #ff523b;
+  font-size: 34px;
+}
+.testimonial .user {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  max-width: 300px;
+  padding: 40px 20px;
+  margin: 10px auto;
+  transition: transform 0.5s;
+}
+.testimonial .user-text {
+  color: #777;
+  font-size: 12px;
+}
+.testimonial .user-name {
+  color: #555;
+  font-weight: 600;
+}
+.testimonial .user:hover {
+  transform: translateY(-5px);
+}
+
+.owl-carousel .owl-item img {
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.brands img {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.brands img:hover {
+  filter: grayscale(0);
+}
+
+.footer {
+  background: #000;
+  color: white;
+  padding: 46px 32px 16px;
+}
+.footer p, .footer li {
+  color: #8a8a8a;
+}
+.footer p {
+  font-size: 14px;
+}
+.footer img {
+  width: 140px;
+}
+.footer h6 {
+  padding: 16px 0;
+}
+.footer hr {
+  margin: 16px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .main-header {
+    padding: 64px 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .padding {
+    margin-top: 64px;
+  }
+
+  .categories img {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .products .card {
+    width: 80%;
+    margin-bottom: 32px;
+    margin: 0 auto;
+  }
+
+  .offer {
+    padding: 32px 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .padding {
+    margin-top: 32px;
+  }
+
+  .main-header {
+    padding: 24px;
+  }
+  .main-header-info, .main-header-img {
+    text-align: center;
+  }
+
+  .categories img {
+    width: 100%;
+  }
+
+  .products-title {
+    margin-bottom: 32px;
+  }
+  .products .card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .offer-img {
+    padding: 80px;
+  }
+  .offer-infor, .offer-img {
+    text-align: center;
+  }
+
+  .testimonial .user {
+    width: 90%;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+.products-short {
+  margin: 16px 0 64px;
+}
+.products button {
+  border: 1px solid #ff523b;
+}
+.products button:focus {
+  box-shadow: none;
+}
+.products .pagination .page-link {
+  color: black;
+  border-color: #ff523b;
+}
+.products .pagination .page-item.active .page-link {
+  background-color: #ff523b;
+  border-color: #ff523b;
+  color: white;
+}
+.products .pagination .page-link:focus {
+  box-shadow: none;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: left top;
+}
+.cart-table input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+.cart-info {
+  color: #555;
+}
+.cart-info a {
+  color: #ff523b;
+}
+
+table thead {
+  background-color: #ff523b;
+}
+
+.table-total {
+  max-width: 400px;
+  border-top: 3px solid #ff523b;
+}
+
+.account {
+  background: radial-gradient(#fff, #ffd6d6);
+  padding: 56px 32px;
+}
+.account-form {
+  background-color: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 16px;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.account .form-btn {
+  color: #555;
+  cursor: pointer;
+  padding: 0 10px;
+  margin-bottom: 56px;
+}
+.account .form-btn div {
+  width: 100px;
+}
+.account #LoginForm input {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  font-size: 14px;
+  padding: 6px 8px;
+}
+.account #LoginForm button {
+  width: 100%;
+  margin: 16px 0;
+  padding: 6px 0;
+}
+.account #LoginForm a {
+  font-size: 14px;
+  color: #555;
+}
+.account #Indicator {
+  width: 100px;
+  background-color: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .account-form {
+    margin-top: 16px;
+  }
+}
+.produc-info {
+  padding-left: 46px;
+}
+.produc-info input {
+  width: 45px;
+  margin-right: 20px;
+}
+.produc-info .btn {
+  color: black;
+  border-color: #ff523b;
+}
+.produc-info .btn:focus {
+  box-shadow: none;
+}
+.produc-info h2 {
+  font-size: 40px;
+  margin: 46px 0;
+}
+.produc-info h5 {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.breadcrumb-item a {
+  color: #ff523b;
+}
+.breadcrumb-item a.active {
+  color: #555;
+}
+
+@media only screen and (max-width: 575px) {
+  .produc-info {
+    padding-left: 15px;
+    padding-top: 32px;
+  }
+  .produc-info h2 {
+    font-size: 32px;
+    margin: 16px 0;
+  }
+  .produc-info h5 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

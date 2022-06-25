@@ -1,0 +1,21 @@
+.navbar{
+   padding: 16px 32px;
+}
+
+.navigation-wrap.scroll-on{
+	position:fixed;
+	background-color:white;
+	top:0;
+	left:0;
+	width:100%;
+	box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
+	transition: all 0.15s ease-in-out 0s;
+	z-index: 100;
+}
+.navigation-wrap.scroll-on .nav-link{
+color:black;
+}
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active{
+color:$primary-color;
+}

@@ -1,0 +1,16 @@
+@mixin gradient {
+    background: radial-gradient(#fff,#ffd6d6);
+}
+// include gradient
+
+@mixin minWidth($breakpoint) {
+    @media only screen and (min-width: $breakpoint){
+        @content;
+    }
+}
+
+@mixin maxWidth($breakpoint) {
+    @media only screen and (max-width: $breakpoint){
+        @content;
+    }
+}
